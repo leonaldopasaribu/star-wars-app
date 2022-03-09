@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  color: $color-secondary;
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,10 @@
+@import "./abstracts/mixin";
+@import "./abstracts/variable";
+@import "base/base";
+@import "layout/layout";
+
+//Components Style
+
+@import "../components/Global/Card/card";
+@import "../components/Global/Header/header";
+@import "../components/DashboardPage/dasboard-page";
