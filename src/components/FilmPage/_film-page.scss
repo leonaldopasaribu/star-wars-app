@@ -1,0 +1,12 @@
+.film-page {
+  h1 {
+    text-align: center;
+    color: #000;
+  }
+
+  &__list-movie {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}

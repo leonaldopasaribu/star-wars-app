@@ -7,10 +7,10 @@ const FilmPage = () => {
   const film = useSelector((state) => state.film);
 
   return (
-    <div className="dashboard-page">
+    <div className="film-page container">
       <h1>List Movie</h1>
 
-      <div className="dashboard-page__list-movie">
+      <div className="film-page__list-movie">
         {Array.isArray(film.data.results) ? (
           film.data.results.map((data, i) => <Cards key={i} data={data} />)
         ) : (
