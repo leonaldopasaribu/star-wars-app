@@ -1,9 +1,13 @@
 import React from "react";
 
-export default function PeopleDetails() {
+import Header from "../../components/Global/Header";
+import PeopleDetailPage from "../../components/PeopleDetailPage";
+
+export default function Peoples() {
   return (
     <div>
-      <p>PeopleDetails</p>
+      <Header />
+      <PeopleDetailPage />
     </div>
   );
 }
