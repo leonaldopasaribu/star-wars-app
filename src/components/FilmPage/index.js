@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useSelector } from "react-redux";
 
 import Cards from "../Global/Card";
@@ -11,9 +11,11 @@ const FilmPage = () => {
       <h1>List Movie</h1>
 
       <div className="dashboard-page__list-movie">
-        {film.data.results.map((data, i) => (
-          <Cards key={i} data={data} />
-        ))}
+        {Array.isArray(film.data.results) ? (
+          film.data.results.map((data, i) => <Cards key={i} data={data} />)
+        ) : (
+          <p>Empty</p>
+        )}
       </div>
     </div>
   );

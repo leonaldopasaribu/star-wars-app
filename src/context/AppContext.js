@@ -39,14 +39,6 @@ export const AppProvider = ({ children }) => {
   const { width } = useWindowDimensions();
 
   useEffect(() => {
-    dispatch(getFilms());
-  }, []);
-
-  useEffect(() => {
-    dispatch(getPeoples());
-  }, []);
-
-  useEffect(() => {
     if (width < 1366) {
       setIsMedium(true);
     } else {
